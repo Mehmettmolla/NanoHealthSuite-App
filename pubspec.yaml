@@ -35,6 +35,10 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flutter_riverpod: ^2.3.6
+  dio: ^5.1.2
+  flutter_secure_storage: ^8.0.0
+  flutter_svg: ^2.0.5
 
 dev_dependencies:
   flutter_test:
@@ -57,6 +61,11 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/ 
+    - assets/fonts/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -88,3 +97,12 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: Open Sans
+      fonts:
+        - asset: assets/fonts/open_sans/OpenSans-LightItalic.ttf
+          weight: 300
+        - asset: assets/fonts/open_sans/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/open_sans/OpenSans-Bold.ttf
+          weight: 700
