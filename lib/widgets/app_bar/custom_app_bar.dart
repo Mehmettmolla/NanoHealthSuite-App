@@ -1,10 +1,10 @@
-import 'package:NanoHealthSuiteApp/constant/app_color.dart';
-import 'package:NanoHealthSuiteApp/constant/app_padding.dart';
-import 'package:NanoHealthSuiteApp/constant/app_radius.dart';
-import 'package:NanoHealthSuiteApp/constant/app_text_style.dart';
-import 'package:NanoHealthSuiteApp/extension/widget/widget_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:nano_health_suite_app/constant/app_color.dart';
+import 'package:nano_health_suite_app/constant/app_padding.dart';
+import 'package:nano_health_suite_app/constant/app_radius.dart';
+import 'package:nano_health_suite_app/constant/app_text_style.dart';
+import 'package:nano_health_suite_app/extension/widget/widget_extension.dart';
 
 class CustomAppBar extends ConsumerStatefulWidget with PreferredSizeWidget {
   CustomAppBar(

@@ -1,16 +1,16 @@
-import 'package:NanoHealthSuiteApp/constant/app_color.dart';
-import 'package:NanoHealthSuiteApp/constant/app_padding.dart';
-import 'package:NanoHealthSuiteApp/constant/app_radius.dart';
-import 'package:NanoHealthSuiteApp/constant/app_size.dart';
-import 'package:NanoHealthSuiteApp/controller/base_scaffold_controller.dart';
-import 'package:NanoHealthSuiteApp/extension/list/list_extension.dart';
-import 'package:NanoHealthSuiteApp/extension/widget/widget_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:nano_health_suite_app/constant/app_color.dart';
+import 'package:nano_health_suite_app/constant/app_padding.dart';
+import 'package:nano_health_suite_app/constant/app_radius.dart';
+import 'package:nano_health_suite_app/constant/app_size.dart';
+import 'package:nano_health_suite_app/controller/base_scaffold_controller.dart';
+import 'package:nano_health_suite_app/extension/list/list_extension.dart';
+import 'package:nano_health_suite_app/extension/widget/widget_extension.dart';
 
 
 class CustomNavBar extends ConsumerStatefulWidget {
-  CustomNavBar({Key? key,}) : super(key: key);
+  const CustomNavBar({Key? key,}) : super(key: key);
   @override
   ConsumerState<ConsumerStatefulWidget> createState() => _CustomNavBarState();
 }

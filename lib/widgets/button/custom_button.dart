@@ -1,10 +1,11 @@
-import 'package:NanoHealthSuiteApp/constant/app_color.dart';
-import 'package:NanoHealthSuiteApp/constant/app_radius.dart';
-import 'package:NanoHealthSuiteApp/constant/app_size.dart';
-import 'package:NanoHealthSuiteApp/constant/app_text_style.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:nano_health_suite_app/constant/app_color.dart';
+import 'package:nano_health_suite_app/constant/app_radius.dart';
+import 'package:nano_health_suite_app/constant/app_size.dart';
+import 'package:nano_health_suite_app/constant/app_text_style.dart';
 
 
+// ignore: must_be_immutable
 class CustomButton extends StatelessWidget {
   CustomButton({
     super.key,

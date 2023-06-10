@@ -1,10 +1,11 @@
-import 'package:NanoHealthSuiteApp/controller/base_scaffold_controller.dart';
-import 'package:NanoHealthSuiteApp/widgets/navigation_bar/custom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:nano_health_suite_app/controller/base_scaffold_controller.dart';
+import 'package:nano_health_suite_app/widgets/navigation_bar/custom_navigation_bar.dart';
 
 
 
+// ignore: must_be_immutable
 class BaseScafoldView extends ConsumerStatefulWidget {
    BaseScafoldView({Key? key,this.index}) : super(key: key);
   int? index;
@@ -29,7 +30,7 @@ class _BaseScafoldViewState extends ConsumerState<BaseScafoldView> {
   Widget build(BuildContext context) {
     final watch = ref.watch(baseScaffoldController);
     return Scaffold(
-      bottomNavigationBar: CustomNavBar(),
+      bottomNavigationBar: const CustomNavBar(),
       extendBody: true,
       body: watch.body(),
     );

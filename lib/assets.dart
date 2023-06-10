@@ -49,5 +49,4 @@ class _AssetsImages {
 
 
   final imAppLogoPNG = 'assets/images/im_app_logo.png';
-  final imProductPNG = 'assets/images/im_product.png';
 }

@@ -1,5 +1,5 @@
-import 'package:NanoHealthSuiteApp/constant/app_color.dart';
 import 'package:flutter/material.dart';
+import 'package:nano_health_suite_app/constant/app_color.dart';
 
 class CustomCircleProgressIndicator extends StatelessWidget {
   const CustomCircleProgressIndicator({super.key});

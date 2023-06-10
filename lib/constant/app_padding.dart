@@ -8,4 +8,7 @@ class AppPadding {
   static const double smallHorizontalPadding = 16.0;
   static const double largeHorizontalPadding = 36.0;
   static const double largeVerticalPadding = 100.0;
+  static const double smallVerticalPadding = 8.0;
+  static const double extraSmallHorizontalPadding= 12.0;
+  static const double shareButtonPadding= 18.0;
 }

@@ -1,8 +1,8 @@
-import 'package:NanoHealthSuiteApp/constant/app_color.dart';
-import 'package:NanoHealthSuiteApp/constant/app_radius.dart';
-import 'package:NanoHealthSuiteApp/extension/widget/widget_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:nano_health_suite_app/constant/app_color.dart';
+import 'package:nano_health_suite_app/constant/app_radius.dart';
+import 'package:nano_health_suite_app/extension/widget/widget_extension.dart';
 
 class CustomIconButton extends StatelessWidget {
   const CustomIconButton({super.key, this.icon, this.padding, this.onPressed });
@@ -20,7 +20,7 @@ class CustomIconButton extends StatelessWidget {
             color: Colors.grey.withOpacity(0.2),
             spreadRadius: 1,
             blurRadius: 5,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
         borderRadius: AppRadius.cardRadius,

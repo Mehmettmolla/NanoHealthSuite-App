@@ -1,9 +1,8 @@
-import 'package:NanoHealthSuiteApp/constant/app_color.dart';
-import 'package:NanoHealthSuiteApp/view/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:nano_health_suite_app/constant/app_color.dart';
+import 'package:nano_health_suite_app/view/splash/splash_view.dart';
 
-import 'view/base_scaffold/base_scaffold_view.dart';
 
 
 void main() {

@@ -1,21 +1,22 @@
-import 'package:NanoHealthSuiteApp/constant/app_color.dart';
-import 'package:NanoHealthSuiteApp/constant/app_padding.dart';
-import 'package:NanoHealthSuiteApp/constant/app_radius.dart';
-import 'package:NanoHealthSuiteApp/constant/app_size.dart';
-import 'package:NanoHealthSuiteApp/constant/app_text_style.dart';
-import 'package:NanoHealthSuiteApp/extension/num/num_extension.dart';
-import 'package:NanoHealthSuiteApp/extension/widget/widget_extension.dart';
-import 'package:NanoHealthSuiteApp/widgets/rating_bar/custom_rating_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:nano_health_suite_app/constant/app_color.dart';
+import 'package:nano_health_suite_app/constant/app_padding.dart';
+import 'package:nano_health_suite_app/constant/app_radius.dart';
+import 'package:nano_health_suite_app/constant/app_size.dart';
+import 'package:nano_health_suite_app/constant/app_text_style.dart';
+import 'package:nano_health_suite_app/extension/num/num_extension.dart';
+import 'package:nano_health_suite_app/extension/widget/widget_extension.dart';
+import 'package:nano_health_suite_app/widgets/rating_bar/custom_rating_bar.dart';
 
 
 class ProductCard extends StatelessWidget {
-  const ProductCard({super.key, this.productPrice, this.productName, this.productDescription, this.productImage, this.productRating});
+  const ProductCard({super.key, this.productPrice, this.productName, this.productDescription, this.productImage, this.productRating, this.productId});
   final String? productPrice;
   final String? productName;
   final String? productDescription;
   final String? productImage;
   final double? productRating;
+  final int? productId;
 
   @override
   Widget build(BuildContext context) {
@@ -27,17 +28,20 @@ class ProductCard extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: AppRadius.cardRadius,
-              child: Image.asset(
-                productImage ?? "",
-                fit: BoxFit.fill,
-                height: AppSize.screenHeight(context) * 0.24,
+              child: Hero(
+                tag: productId ?? "",
+                child: Image.network(
+                  productImage ?? "",
+                  fit: BoxFit.fill,
+                  height: AppSize.screenHeight(context) * 0.24,
+                ),
               ),
             ),
             Row(
               children: [
                 Text(
                   productPrice ?? "",
-                  style: AppTextStyle.xlMediumWhiteRegularText,
+                  style: AppTextStyle.xlMediumRegularText,
                 ),
                 const Spacer(),
                  CustomRatingBar(

@@ -1,5 +1,5 @@
-import 'package:NanoHealthSuiteApp/constant/app_color.dart';
 import 'package:flutter/material.dart';
+import 'package:nano_health_suite_app/constant/app_color.dart';
 
 class AppTextStyle {
    static TextStyle xsSmallText = const TextStyle(
@@ -32,6 +32,10 @@ class AppTextStyle {
   static TextStyle xlMediumWhiteRegularText = const TextStyle(
     fontSize: 22,
     color: AppColor.white,
+    fontWeight: FontWeight.w700,
+  );
+    static TextStyle xlMediumRegularText = const TextStyle(
+    fontSize: 22,
     fontWeight: FontWeight.w700,
   );
   static TextStyle xsLargeBoldText = const TextStyle(
