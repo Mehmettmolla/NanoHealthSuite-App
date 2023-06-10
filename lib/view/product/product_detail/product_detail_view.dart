@@ -123,7 +123,7 @@ class _ProductDetailViewState extends ConsumerState<ProductDetailView> {
                           Expanded(
                             child: Text(
                               read.getASingleProductModel!.description!,
-                              maxLines: 5,
+                              maxLines: 4,
                               style: AppTextStyle.smallText,
                             ),
                           ),
