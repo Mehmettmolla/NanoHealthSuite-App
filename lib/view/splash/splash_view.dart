@@ -37,10 +37,13 @@ class _SplashViewState extends State<SplashView> {
         gradient: AppColor.gradientBlue,
       ),
       child: Center(
-        child: Image.asset(
-          Assets.images.imAppLogoPNG,
-          width: AppSize.logoWidht,
-          height: AppSize.logoHeight,
+        child: Hero(
+          tag: 'logo',
+          child: Image.asset(
+            Assets.images.imAppLogoPNG,
+            width: AppSize.logoWidht,
+            height: AppSize.logoHeight,
+          ),
         ),
       ),
     );

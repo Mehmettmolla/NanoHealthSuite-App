@@ -28,10 +28,7 @@ class _LoginViewState extends ConsumerState<LoginView> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: [
-            loginBg(),
-            loginBody(read, context)
-          ],
+          children: [loginBg(), loginBody(read, context)],
         ),
       ),
     );
@@ -39,75 +36,78 @@ class _LoginViewState extends ConsumerState<LoginView> {
 
   Container loginBody(AuthController read, BuildContext context) {
     return Container(
-            color: AppColor.white,
-            child: Column(
-              children: [
-                CustomTextfield(
-                  title: "Email",
-                  isEmail: true,
-                  emailText: emailText,
-                  controller: read.email,
-                  emailVerify: emailValid,
-                  onChanged: (value) {
-                    value.isEmail == true || value.isNotShort == true
-                        ? emailValid = true
-                        : emailValid = false;
-                    setState(() {
-                      emailText = value;
-                    });
-                  },
-                ),
-                AppPadding.largePadding.height,
-                CustomTextfield(
-                  title: "Password",
-                  controller: read.password,
-                  isPassword: true,
-                ),
-                AppPadding.largePadding.height,
-                CustomButton(
-                  title: "Continue",
-                  onTap: () {
-                    read.login(context);
-                  },
-                ),
-                AppPadding.largePadding.height,
-                Text(
-                  "NEED HELP?",
-                  style: AppTextStyle.xsMediumRegularText,
-                )
-              ],
-            ).paddingSymetric(
-                horizontal: AppPadding.largeHorizontalPadding,
-                vertical: AppPadding.verticalPadding),
-          );
+      color: AppColor.white,
+      child: Column(
+        children: [
+          CustomTextfield(
+            title: "Email",
+            isEmail: true,
+            emailText: emailText,
+            controller: read.email,
+            emailVerify: emailValid,
+            onChanged: (value) {
+              value.isEmail == true || value.isNotShort == true
+                  ? emailValid = true
+                  : emailValid = false;
+              setState(() {
+                emailText = value;
+              });
+            },
+          ),
+          AppPadding.largePadding.height,
+          CustomTextfield(
+            title: "Password",
+            controller: read.password,
+            isPassword: true,
+          ),
+          AppPadding.largePadding.height,
+          CustomButton(
+            title: "Continue",
+            onTap: () {
+              read.login(context);
+            },
+          ),
+          AppPadding.largePadding.height,
+          Text(
+            "NEED HELP?",
+            style: AppTextStyle.xsMediumRegularText,
+          )
+        ],
+      ).paddingSymetric(
+          horizontal: AppPadding.largeHorizontalPadding,
+          vertical: AppPadding.verticalPadding),
+    );
   }
 
   Container loginBg() {
     return Container(
-            decoration: const BoxDecoration(
-              gradient: AppColor.gradientBlue,
+      decoration: const BoxDecoration(
+        gradient: AppColor.gradientBlue,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Center(
+            child: Hero(
+              tag: 'logo',
+              child: Image.asset(
+                Assets.images.imAppLogoPNG,
+                width: AppSize.logoWidht,
+                height: AppSize.logoHeight,
+              ),
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Center(
-                  child: Image.asset(
-                    Assets.images.imAppLogoPNG,
-                    width: AppSize.logoWidht,
-                    height: AppSize.logoHeight,
-                  ),
-                ),
-                AppPadding.extraLargePadding.height,
-                Text(
-                  'Log In',
-                  style: AppTextStyle.largeWhiteBoldText,
-                ),
-              ],
-            )
-                .paddingSymetric(
-                    horizontal: AppPadding.largeHorizontalPadding,
-                    vertical: AppPadding.verticalPadding)
-                .paddingOnly(top: AppPadding.extraLargePadding),
-          );
+          ),
+          AppPadding.extraLargePadding.height,
+          Text(
+            'Log In',
+            style: AppTextStyle.largeWhiteBoldText,
+          ),
+        ],
+      )
+          .paddingSymetric(
+              horizontal: AppPadding.largeHorizontalPadding,
+              vertical: AppPadding.verticalPadding)
+          .paddingOnly(top: AppPadding.extraLargePadding),
+    );
   }
 }
