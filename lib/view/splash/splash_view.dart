@@ -1,7 +1,7 @@
+import 'package:NanoHealthSuiteApp/assets.dart';
+import 'package:NanoHealthSuiteApp/constant/app_color.dart';
+import 'package:NanoHealthSuiteApp/view/auth/login/login_view.dart';
 import 'package:flutter/material.dart';
-import 'package:nano/assets.dart';
-import 'package:nano/constant/app_color.dart';
-import 'package:nano/view/auth/login/login_view.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

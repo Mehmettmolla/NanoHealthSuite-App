@@ -1,15 +1,18 @@
+import 'package:NanoHealthSuiteApp/assets.dart';
+import 'package:NanoHealthSuiteApp/constant/app_color.dart';
+import 'package:NanoHealthSuiteApp/constant/app_padding.dart';
+import 'package:NanoHealthSuiteApp/constant/app_size.dart';
+import 'package:NanoHealthSuiteApp/constant/app_text_style.dart';
+import 'package:NanoHealthSuiteApp/extension/num/num_extension.dart';
+import 'package:NanoHealthSuiteApp/extension/string/string_extension.dart';
+import 'package:NanoHealthSuiteApp/extension/widget/widget_extension.dart';
+import 'package:NanoHealthSuiteApp/view/base_scaffold/base_scaffold_view.dart';
+import 'package:NanoHealthSuiteApp/view/product/all_product/all_product_view.dart';
+import 'package:NanoHealthSuiteApp/widgets/button/custom_button.dart';
+import 'package:NanoHealthSuiteApp/widgets/textfield/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:nano/assets.dart';
-import 'package:nano/constant/app_color.dart';
-import 'package:nano/constant/app_padding.dart';
-import 'package:nano/constant/app_size.dart';
-import 'package:nano/constant/app_text_style.dart';
-import 'package:nano/extension/num/num_extension.dart';
-import 'package:nano/extension/string/string_extension.dart';
-import 'package:nano/extension/widget/widget_extension.dart';
-import 'package:nano/widgets/button/custom_button.dart';
-import 'package:nano/widgets/textfield/custom_textfield.dart';
+
 
 class LoginView extends ConsumerStatefulWidget {
   const LoginView({super.key});
@@ -81,7 +84,7 @@ class _LoginViewState extends ConsumerState<LoginView> {
                     title: "Continue",
                     onTap: () {
                             Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const LoginView()));
+          context, MaterialPageRoute(builder: (context) => BaseScafoldView()));
                     },
                   ),
                   AppPadding.largePadding.height,

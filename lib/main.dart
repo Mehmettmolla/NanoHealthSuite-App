@@ -1,7 +1,10 @@
+import 'package:NanoHealthSuiteApp/constant/app_color.dart';
+import 'package:NanoHealthSuiteApp/view/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:nano/constant/app_color.dart';
-import 'package:nano/view/splash/splash_view.dart';
+
+import 'view/base_scaffold/base_scaffold_view.dart';
+
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -20,7 +23,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Open Sans',
         useMaterial3: true,
       ),
-      home: const SplashView(),
+      home:  const SplashView(),
     );
   }
 }

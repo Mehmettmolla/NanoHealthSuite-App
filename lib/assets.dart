@@ -28,7 +28,20 @@ class _AssetsIcons {
   _AssetsIcons._();
 
 
+  final icArrowDownSVG = 'assets/icons/ic_arrow_down.svg';
+  final icArrowUpSVG = 'assets/icons/ic_arrow_up.svg';
+  final icBackArrowSVG = 'assets/icons/ic_back_arrow.svg';
   final icCheckMarkSVG = 'assets/icons/ic_check_mark.svg';
+  final icLikeActiveSVG = 'assets/icons/ic_like_active.svg';
+  final icLikePassiveSVG = 'assets/icons/ic_like_passive.svg';
+  final icProductActiveSVG = 'assets/icons/ic_product_active.svg';
+  final icProductPassiveSVG = 'assets/icons/ic_product_passive.svg';
+  final icProfileActiveSVG = 'assets/icons/ic_profile_active.svg';
+  final icProfilePassiveSVG = 'assets/icons/ic_profile_passive.svg';
+  final icShareSVG = 'assets/icons/ic_share.svg';
+  final icShoppingActiveSVG = 'assets/icons/ic_shopping_active.svg';
+  final icShoppingPassiveSVG = 'assets/icons/ic_shopping_passive.svg';
+  final icThreeDotSVG = 'assets/icons/ic_three_dot.svg';
 }
 
 class _AssetsImages {
@@ -36,4 +49,5 @@ class _AssetsImages {
 
 
   final imAppLogoPNG = 'assets/images/im_app_logo.png';
+  final imProductPNG = 'assets/images/im_product.png';
 }

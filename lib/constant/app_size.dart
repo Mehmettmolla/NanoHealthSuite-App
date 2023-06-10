@@ -11,4 +11,7 @@ class AppSize {
 
   static const double logoWidht = 240;
   static const double logoHeight = 117;
+
+  static const double productWidht = 370;
+  static const double productHeight = 247;
 }
